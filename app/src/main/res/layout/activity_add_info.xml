@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ffe5a8"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.otto.testonlinedb.Add_info">
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_name"
+        android:layout_marginTop="62dp"
+        android:hint="Enter Name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_mob"
+        android:hint="Enter Surname"
+        android:layout_below="@+id/get_name"
+        android:layout_alignLeft="@+id/get_name"
+        android:layout_alignStart="@+id/get_name" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_email"
+        android:layout_below="@+id/et_mob"
+        android:hint="Enter Email"
+        android:layout_alignLeft="@+id/et_mob"
+        android:layout_alignStart="@+id/et_mob"
+        android:layout_alignRight="@+id/et_mob"
+        android:layout_alignEnd="@+id/et_mob" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Data"
+        android:id="@+id/button3"
+        android:onClick="saveInfo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Person"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffe5a8"
+    tools:context="com.otto.testonlinedb.UpdatePerson">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_name"
+        android:hint="Enter Name"
+        android:layout_centerVertical="true"
+        android:enabled="false"
+        android:layout_alignLeft="@+id/et_email"
+        android:layout_alignStart="@+id/et_email"
+        android:layout_alignRight="@+id/et_email"
+        android:layout_alignEnd="@+id/et_email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_email"
+        android:hint="Enter Email"
+        android:layout_below="@+id/get_name"
+        android:layout_alignLeft="@+id/et_mobile"
+        android:layout_alignStart="@+id/et_mobile"
+        android:layout_alignRight="@+id/et_mobile"
+        android:layout_alignEnd="@+id/et_mobile" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_mobile"
+        android:hint="Enter Mobile"
+        android:layout_below="@+id/et_email"
+        android:layout_alignLeft="@+id/btn_populat"
+        android:layout_alignStart="@+id/btn_populat"
+        android:layout_alignRight="@+id/btn_populat"
+        android:layout_alignEnd="@+id/btn_populat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search person"
+        android:id="@+id/btn_searchPer"
+        android:onClick="searchPerson"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_get_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btn_searchPer"
+        android:layout_alignStart="@+id/btn_searchPer"
+        android:layout_alignRight="@+id/btn_searchPer"
+        android:layout_alignEnd="@+id/btn_searchPer"
+        android:hint="Enter name" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Update Person"
+        android:onClick="updatePerson"
+        android:id="@+id/btn_populat"
+        android:layout_below="@+id/et_mobile"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/btn_searchPer"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
